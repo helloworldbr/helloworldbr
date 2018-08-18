@@ -2,23 +2,25 @@
 
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
-# Build the project.
-hugo # if using a theme, replace with `hugo -t <YOURTHEME>`
+# Gerando Site Estático
+hugo
 
-# Go To Public folder
+# Dando permissão ao diretório /public
+chmod 777 public
+
 cd public
-# Add changes to git.
+# Adiciona todos os arquivos
 git add .
 
-# Commit changes.
+# Se adicionou algum arquivo, dá commit
 msg="rebuilding | `date`"
 if [ $# -eq 1 ]
   then msg="$1"
 fi
 git commit -m "$msg"
 
-# Push source and build repos.
+# Dá um Push
 git push origin master
 
-# Come Back up to the Project Root
+# Retorna ao diretório original do projeto
 cd ..
