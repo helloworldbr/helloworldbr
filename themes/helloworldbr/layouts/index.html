@@ -17,7 +17,7 @@
         <time datetime="2016-11-14T16:49:32.000Z" itemprop="datePublished">{{ .PublishDate.Format "Mon, 02/Jan/2006" }}</time>
       </div>
       <span>
-        <a class="" href="{{ .Site.BaseURL }}?utm_source=lista-home">{{.Title }}</a>
+        <a href="{{ .Site.BaseURL }}{{ .RelPermalink }}?utm_source=lista-home">{{.Title }}</a>
       </span>
     </li>
     {{end}}
