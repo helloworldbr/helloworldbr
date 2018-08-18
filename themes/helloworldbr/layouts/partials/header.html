@@ -1,41 +1,48 @@
+<!-- https://probberechts.github.io/hexo-theme-cactus/cactus-dark/public/ -->
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>{{ .Title }} - {{ .Site.Title }}</title>
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/crab.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=3.0">
-    {{ .Hugo.Generator }}
+<html lang=en>
+<head>
 
+  <!-- title -->
+  <title>{{ .Title }} - {{ .Site.Title }}</title>
 
+  <!-- metas -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="description" content="Hi, I&apos;m a theme for the [Hexo](http://hexo.io) blogging framework. I&apos;m particularly great for a personal web page with a simple blog. In this paragraph, you can provide some information about yourself">
 
-    {{ if isset .Site.Params "mathjax"}}
-    <script type="text/javascript" src="{{ .Site.Params.mathjax }}">
-    </script>
-    {{end}}
+  <link rel="shortcut icon" href="{{ .Site.BaseURL }}images/favicon.ico">
+  <link rel="icon" type="image/png" href="{{ .Site.BaseURL }}images/favicon-192x192.png" sizes="192x192">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.BaseURL }}images/apple-touch-icon.png">
 
-  </head>
-  <body>
+  <!-- styles -->
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/rtl.css">
 
-    <div id="container">
+  {{ .Hugo.Generator }}
 
-      <div id="header">
+</head>
 
-        <div id="site-logo">
-          {{ if isset .Site.Params "logoimage" }}
-            <img src="{{ .Site.BaseURL }}{{ .Site.Params.logoimage }}">
-          {{ else }}
-            <img src="{{ .Site.BaseURL }}img/crab-logo.png">
-          {{ end }}
-        </div>
+<body class="max-width mx-auto px3 ltr">
 
-	<div id="site-title"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></div>
-	<div id="site-slogan">{{ .Site.Params.Description }}</div>
+<div class="content index my4">
 
+  <header id="header">
+    <a href="{{ .Site.BaseURL }}">
+      <div id="logo" style="background-image: url({{ .Site.BaseURL }}images/logo.png);"></div>
+      <div id="title">
+        <h1>Hello World</h1>
       </div>
-
-      {{ partial "menu.html" .Site.Menus.main }}
-
-      <div id="content">
-
-        <div id="article">
-	  <h1>{{ .Title }}</h1>
+    </a>
+    <div id="nav">
+      <ul>
+        <li class="icon"><a href="#"><i class="fas fa-bars fa-2x"></i></a></li>
+        <li><a href="{{ .Site.BaseURL }}">Home</a></li>
+        <li><a href="{{ .Site.BaseURL }}about/">About</a></li>
+        <li><a href="{{ .Site.BaseURL }}archives/">Writing</a></li>
+        <li><a href="{{ .Site.BaseURL }}projects_url">Projects</a></li>
+      </ul>
+    </div>
+  </header>
