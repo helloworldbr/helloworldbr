@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="{{ .Site.LanguageCode | default "pt-br" }}" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
 <head>
 
   <!-- title -->
@@ -10,9 +10,31 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="HandheldFriendly" content="True">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <meta name="description" content="Hi, I&apos;m a theme for the [Hexo](http://hexo.io) blogging framework. I&apos;m particularly great for a personal web page with a simple blog. In this paragraph, you can provide some information about yourself">
-  <meta http-equiv="Content-Language" content="pt-br">
+  <meta name="description" content="{{ .Param "excerpt" }}">
+  <meta http-equiv="Content-Language" content="{{ .Site.LanguageCode | default "pt-br" }}">
 
+  <link rel="canonical" href="{{ .Permalink }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+
+  {{ if $.Scratch.Get "single"}}
+  <meta property="og:type" content="article">
+  {{end}}
+
+  {{ if .IsHome}}
+  <meta property="og:type" content="website" />
+  {{end}}
+
+  <meta property="og:title" content="{{ .Title}}">
+  <meta property="og:description" content="{{ .Param "excerpt " }}" name="description">
+  <meta property="og:image" content="{{ with .Params.image }}{{ . }}{{ else }}images/missing-img.png{{ end }}">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@helloworldbr">
+  <meta name="twitter:title" content="{{.Title}}">
+  <meta name="twitter:description" content="{{ .Param "excerpt " }}">
+  <meta name="twitter:image" content="{{ with .Params.image }}{{ . }}{{ else }}images/missing-img.png{{ end }}">
+
+  <!-- favico -->
   <link rel="shortcut icon" href="{{ .Site.BaseURL }}images/favicon.ico">
   <link rel="icon" type="image/png" href="{{ .Site.BaseURL }}images/favicon-192x192.png" sizes="192x192">
   <link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.BaseURL }}images/apple-touch-icon.png">

@@ -11,3 +11,8 @@ theme="helloworldbr"
   category = "categories"
   tag = "tags"
   author = "authors"
+
+[params]
+  siteName = "Hello World Brasil"
+  description = "Projeto colaborativo dos irmãos Gonçalves sobre tecnologia."
+  image = "shared.png"
