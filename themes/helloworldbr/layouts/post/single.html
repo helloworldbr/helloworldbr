@@ -7,10 +7,12 @@
   <p class="tb-hero-p">
     {{ .Param "excerpt" }}
   </p>
+  <small>
   {{ partial "byauthor.html" . }}
   {{ partial "postdate.html" . }}
   <a href="{{ .Permalink }}#disqus_thread" class="tb-lnk-comments">Comentários</a>
   <span class="tb-post-time-read">~ {{.ReadingTime}} min. / {{.WordCount}} palavras</span>
+  </small>
 </header>
 
 <div class="tb-post">
@@ -42,6 +44,7 @@
       </script>
     </div>
 
+    <h2>Deixe um comentário</h2>
     {{ partial "disqus.html" . }}
   </section>
 

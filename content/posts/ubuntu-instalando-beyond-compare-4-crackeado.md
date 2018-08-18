@@ -2,7 +2,7 @@
 title: '[Ubuntu] Instalando o Beyond Compare 4 (crackeado)'
 authors: Tihh Gonçalves
 type: post
-date: 2018-08-17
+date: 2018-08-16
 excerpt: 'Instale (inclusive crackeado) o melhor comparador de arquivos que existe. '
 categories:
   - Ubuntu
