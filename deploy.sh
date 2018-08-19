@@ -13,7 +13,7 @@ cd public
 git add .
 
 # Se adicionou algum arquivo, dá commit
-msg="rebuilding | `date +"%m-%d-%Y %T"`"
+msg="rebuilding | `date +"%d-%m-%Y %T"`"
 if [ $# -eq 1 ]
   then msg="$1"
 fi
