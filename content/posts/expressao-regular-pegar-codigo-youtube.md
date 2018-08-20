@@ -21,8 +21,8 @@ Desenvolvi, então, uma Expressão Regular que retorna o código do vídeo indif
 
 Segue a RE:
 
-```
-[http|https]:\/\/(?:youtu\.be\/|(?:[a-z]{2,3}\.)?youtube\.com\/watch(?:\?|#\!)v=)([\w-]{11}).*
+```regex
+ [http|https]:\/\/(?:youtu\.be\/|(?:[a-z]{2,3}\.)?youtube\.com\/watch(?:\?|#\!)v=)([\w-]{11}).*
 ```
 Porém, pra facilitar a minha vida (e talvez a sua), fiz uma função que você passa por parâmetro a URL do Youtube e retorna o código do vídeo.
 
