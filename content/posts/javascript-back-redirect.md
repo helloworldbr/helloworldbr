@@ -21,10 +21,9 @@ ao invés de voltar de fato a página anterior, abrisse uma segunda página de v
 
 Em outras palavras, é manipular a página anterior (pra não ser uma página anterior real, mas uma que eu queira que seja).
 
-```js
-    var back_redirect_back_link = 'http://blog.tiago.art.br';
+```javascript
+    var back_redirect_back_link = 'http://www.google.com.br/';
 
-    history.pushState({},"",location.href);
     history.pushState({},"",location.href);
 
     window.onpopstate = function(){
