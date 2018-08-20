@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "pt-br" }}" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+
+  <!-- title -->
+  <title>{{ .Title }} - {{ .Site.Title }}</title>
+
+  <!-- metas -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="description" content="{{ .Param "excerpt" }}">
+  <meta http-equiv="Content-Language" content="{{ .Site.LanguageCode | default "pt-br" }}">
+
+  <link rel="canonical" href="{{ .Permalink }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+
+  {{ if $.Scratch.Get "single"}}
+  <meta property="og:type" content="article">
+  {{end}}
+
+  {{ if .IsHome}}
+  <meta property="og:type" content="website" />
+  {{end}}
+
+  <meta property="og:title" content="{{ .Title}}">
+  <meta property="og:description" content="{{ .Param "excerpt " }}" name="description">
+  <meta property="og:image" content="{{ with .Params.image }}{{ . }}{{ else }}images/missing-img.png{{ end }}">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@helloworldbr">
+  <meta name="twitter:title" content="{{.Title}}">
+  <meta name="twitter:description" content="{{ .Param "excerpt " }}">
+  <meta name="twitter:image" content="{{ with .Params.image }}{{ . }}{{ else }}images/missing-img.png{{ end }}">
+
+  <!-- favico -->
+  <link rel="shortcut icon" href="{{ .Site.BaseURL }}images/favicon.ico">
+  <link rel="icon" type="image/png" href="{{ .Site.BaseURL }}images/favicon-192x192.png" sizes="192x192">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.BaseURL }}images/apple-touch-icon.png">
+
+  <!-- styles -->
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/rtl.css">
+
+  {{ .Hugo.Generator }}
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124153994-1"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-124153994-1');
+  </script>
+
+  <!-- Facebook Pixel Code -->
+  <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+          n.queue=[];t=b.createElement(e);t.async=!0;
+          t.src=v;s=b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t,s)}(window, document,'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '272314436704852');
+      fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+                 src="https://www.facebook.com/tr?id=272314436704852&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Facebook Pixel Code -->
+
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+
+<div class="content index my4">
+
+  <header id="header">
+
+    <!-- Logo -->
+    <a href="{{ .Site.BaseURL }}">
+      <div id="logo" style="background-image: url({{ .Site.BaseURL }}images/logo.png);"></div>
+      <div id="title">
+        <h1>Hello World Brasil</h1>
+      </div>
+    </a>
+
+    <!-- Menu -->
+    <div id="nav">
+      <ul>
+        <li class="icon"><a href="#"><i class="fas fa-bars fa-2x"></i></a></li>
+        <li><a href="{{ .Site.BaseURL }}">Home</a></li>
+        <li><a href="{{ .Site.BaseURL }}about/">About</a></li>
+        <li><a href="{{ .Site.BaseURL }}blog/">Blog</a></li>
+        <li><a href="{{ .Site.BaseURL }}projects">Projects</a></li>
+      </ul>
+    </div>
+
+  </header>

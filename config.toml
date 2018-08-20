@@ -1,27 +1,18 @@
-baseURL = "https://helloworldbr.github.io"
-DefaultContentLanguage  = "pt-br"
+baseURL = "https://helloworldbr.github.io/"
+languageCode = "pt-br"
 title = "Hello World Brasil"
-tags = [ "Hugo", "theme", "Crab" ]
-theme="hellow"
-
-
-disqusShortname = "hellow"
-googleAnalytics = "UA-XXXXXX"
-
-enableRobotsTXT = true
-draft = false
+theme="helloworldbr"
 
 [permalinks]
   posts = "/:filename"
   pages = "/:filename"
-
 
 [taxonomies]
   category = "categories"
   tag = "tags"
   author = "authors"
 
-
 [params]
   siteName = "Hello World Brasil"
-  description = "Projeto livre dos irmãos @bugotech e @tihhgoncalves   sobre tecnologia. Os conteúdos aqui divulgados para fins de ajuda a outros desenvolvedores."
+  description = "Projeto colaborativo dos irmãos Gonçalves sobre tecnologia."
+  image = "shared.png"

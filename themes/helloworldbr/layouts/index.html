@@ -1,0 +1,47 @@
+{{ partial "header.html" . }}
+
+  {{ range where .Data.Pages "Title" "Home" }}
+    {{ .Content }}
+  {{ end }}
+
+
+<section>
+
+  <h1>Blog</h1>
+
+  <ul class="post-list">
+
+    {{range first 10 (where .Pages "Type" "post") }}
+    <li class="post-item">
+      <div class="meta">
+        <time datetime="2016-11-14T16:49:32.000Z" itemprop="datePublished">{{ .PublishDate.Format "Mon, 02/Jan/2006" }}</time>
+      </div>
+      <span>
+        <a href="{{ .Site.BaseURL }}{{ .RelPermalink }}?utm_source=lista-home">{{.Title }}</a>
+      </span>
+    </li>
+    {{end}}
+
+  </ul>
+
+</section>
+
+<section>
+
+  <h1>Projects</h1>
+
+  <ul class="project-list">
+
+    <li class="project-item">
+      <a href="http://rhinojs.leiame.org/master">rhinoJS</a>: <p>Framework de JavaScript.</p>
+    </li>
+
+    <li class="project-item">
+      <a href="http://http://leiame.org">leiame.org</a>: <p>Documentação Github com estilo.</p>
+    </li>
+
+  </ul>
+
+</section>
+
+{{ partial "footer.html" . }}
