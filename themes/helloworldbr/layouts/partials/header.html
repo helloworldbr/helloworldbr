@@ -90,13 +90,7 @@
 
     <!-- Menu -->
     <div id="nav">
-      <ul>
-        <li class="icon"><a href="#"><i class="fas fa-bars fa-2x"></i></a></li>
-        <li><a href="{{ .Site.BaseURL }}">Home</a></li>
-        <li><a href="{{ .Site.BaseURL }}about/">About</a></li>
-        <li><a href="{{ .Site.BaseURL }}blog/">Blog</a></li>
-        <li><a href="{{ .Site.BaseURL }}projects">Projects</a></li>
-      </ul>
+      {{ partial "menu.html" (dict "local" "header") }}
     </div>
 
   </header>

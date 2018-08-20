@@ -1,17 +1,19 @@
 <aside class="tb-aside">
 
   {{ $related := .Site.RegularPages.Related . | first 5 }} {{ with $related }}
+
   <h2>Você vai gostar de ler:</h2>
   <ul>
     {{ range . }}
     <li><a href="{{ .RelPermalink }}?utm_source=lista-relacionado" class="tb-sidebarrelated-post">{{ .Title }}</a></li>
     {{ end }}
   </ul>
+
   {{ end }}
 
   <h2>Últimos posts</h2>
   <ul>
-    {{range last 5 (where .Pages "Type" "post") }}
+    {{range first 10 (where .Pages "Type" "post") }}
     <li><a href="{{ .RelPermalink }}?utm_source=lista-post-ultimos-postados" class="tb-latestpost-link">{{ .Title }}</a></li>
     {{ end }}
   </ul>
