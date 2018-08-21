@@ -4,7 +4,12 @@
 
       <!-- Menu Footer -->
       <nav>
-        {{ partial "menu.html" (dict "local" "footer") }}
+        <ul>
+          <li><a href="{{ .Site.BaseURL }}">Home</a></li>
+          <li><a href="{{ .Site.BaseURL }}about/">About</a></li>
+          <li><a href="{{ .Site.BaseURL }}blog/">Blog</a></li>
+          <li><a href="{{ .Site.BaseURL }}blog/"></a></li>
+        </ul>
       </nav>
 
     </div>
