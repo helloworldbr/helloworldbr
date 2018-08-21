@@ -25,30 +25,31 @@
 
     {{ partial "sponsors/sponsor-paragraph.html" . }}
 
-    <div class="tb-related-posts">
-
-      {{ $related := .Site.RegularPages.Related . | first 5 }} {{ with $related }}
-      <h3>Leia mais:</h3>
-      <ul>
-        {{ range . }}
-        <li><a href="{{ .RelPermalink }}?utm_source=tablelessRelatedLink" class="tb-related-post">{{ .Title }}</a></li>
-        {{ end }}
-      </ul>
-      {{ end }}
-
-    </div>
-
     <div class="tb-banner-article">
       <script class='__lxGc__' type='text/javascript'>
           ((__lxGc__=window.__lxGc__||{'s':{},'b':0})['s']['_210746']=__lxGc__['s']['_210746']||{'b':{}})['b']['_609152']={'i':__lxGc__.b++};
       </script>
     </div>
 
+    <aside class="tb-aside">
+
+      {{ $related := .Site.RegularPages.Related . | first 5 }} {{ with $related }}
+
+      <h2>Leia também:</h2>
+      <ul>
+        {{ range . }}
+        <li><a href="{{ .RelPermalink }}?utm_source=lista-relacionado" class="tb-sidebarrelated-post">{{ .Title }}</a></li>
+        {{ end }}
+      </ul>
+
+      {{ end }}
+
+    </aside>
+
     <h2>Deixe um comentário</h2>
     {{ partial "disqus.html" . }}
   </section>
 
-  {{partial "sidebar.html" .}}
 
 </div>
 
