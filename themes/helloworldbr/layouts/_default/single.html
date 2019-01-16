@@ -3,7 +3,14 @@
 <p class="timestamp">{{ .Date.Format "January 2, 2006" }}</p>
 {{ end }}
 {{ .Content }}
+
+<p>-</p>
+
+<h2>Deixe um comentário</h2>
+{{ partial "disqus.html" . }}
 {{ if .Params.tags }}
   {{ partial "tags" .Params.tags }}
 {{ end }}
 {{ partial "footer.html" . }}
+
+
