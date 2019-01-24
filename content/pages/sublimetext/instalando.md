@@ -61,25 +61,31 @@ Esse cara tem é uma mão na roda. Ele exibe próximo aos números das linhas de
 
 A famosa paleta de cores das melhroes IDEs também está presente em forma de plugin para potencializar o ST. Abra o Package Control, digite Color Picker e instale. Agora basta dar um CTRL/CMD+SHIFT+C e o COlor Picker aparece para você apenas escolher a cor e ele lhe devolve o hexa decimal dela. O Color Picker pode demorar a executar em alguns computares.
 
-## 6 - [PlugIn] Sidebar Enhacements
+## 6 - [PlugIn] Color Highlighter
+
+> [PC: Color Highlighter](https://packagecontrol.io/packages/Color%20Highlighter)
+
+Este plugin ajuda na vizualização de código hexa de cores (ex. #FF0000), colocando embaixo da cores uma barrinha com a cor representante do código.
+
+## 7 - [PlugIn] Sidebar Enhacements
 
 > [PC: Sidebar Enhacements](https://packagecontrol.io/packages/Side​Bar​Enhancements)
 
 A barra lateral do ST é bem simples e quase não tem opções. Com esse plugin você popula a sua sidebar com ações incríveis como, escolher um programa para executar imagens, busca avançada de arquivos por trechos de código, abrir pasta local do arquivos entre muitas outras opções.
 
-## 7 - [PlugIn] CSS3
+## 8 - [PlugIn] CSS3
 
 > [PC: CSS3](https://packagecontrol.io/packages/CSS3)
 
 Para trabalhar com autocompletes bem feitos e a própria sintaxe dos seletores CSS3, este plugin é capaz de detectar e prover autocompletes de seletores e classes além de te dar também o : e o ; com o cursor no meio apenas para digitar o comando. É um obrigatório dentre os plugins.
 
-## 8 - [PlugIn] AutoFileName
+## 9 - [PlugIn] AutoFileName
 
 > [PC: AutoFileName](https://packagecontrol.io/packages/AutoFileName)
 
 Este plugin faz com que ao incluir arquivos em seu código, ele exiba o caminho e o conteúdo das pastas para que você tenha um panorama de onde está na hieranquia de pastas do seu projeto.
 
-## 9 - [PlugIn] PHPGrammar
+## 10 - [PlugIn] PHPGrammar
 
 > [PC: PHPGrammar](https://packagecontrol.io/packages/PHPGrammar)
 
@@ -87,26 +93,26 @@ Não podemos deixar o nosso querido PHP de fora, afinal ele é tem uma função 
 
 O PHPGrammar "ensina" o sublime a interpretar as cores da linguagem, identação e convenções de código.
 
-## 10 - [PlugIn] PHP Completions Kit
+## 11 - [PlugIn] PHP Completions Kit
 
 > [PC: PHP Completions Kit](https://packagecontrol.io/packages/PHP%20Completions%20Kit)
 
 Ainda falando em PHP, temos o PHP Compleitions Kit que provê umbom autocomplete para trabalhar com orientação a objetos e dá suporte as principais funções da linguagem. Permite que sejam criados métodos mágicos, o operados $THIS além de muito mais!
 
-## 11 - [PlugIn] Git
+## 12 - [PlugIn] Git
 
 > [PC: Git](https://packagecontrol.io/packages/Git)
 
 Claro que para um bom programador, o Git não poderia ficar de fora!
 Com ele você terá uma lista de comando do git para fazer o checkout, commit, push, pull.... para tornar o seu dia-a-dia mais produtivo.
 
-## 12 - [PlugIn] GitGutter
+## 13 - [PlugIn] GitGutter
 
 > [PC: GitGutter](https://packagecontrol.io/packages/GitGutter)
 
 Esse plugin, ajuda você, mostrando atravéz de indicadores no lado da barrinha que mostra o número da linha a situação da linha, se ele foi alterada, incluída, escluida e se já foi commitada.
 
-## 13 - [PlugIn] PHP Debug ???
+## 14 - [PlugIn] PHP Debug ???
 
 Ainda não conseguimos fazer funcionar o XDebug no sublime, mas estamos etudando como fazer isso de uma forma correta e assim que conseguirmos já colocamos aqui.
 
