@@ -116,7 +116,7 @@ Esse plugin, ajuda você, mostrando atravéz de indicadores no lado da barrinha 
 
 Ainda não conseguimos fazer funcionar o XDebug no sublime, mas estamos etudando como fazer isso de uma forma correta e assim que conseguirmos já colocamos aqui.
 
-## 14 - [PlugIn] NodeJS Debug ???
+## 15 - [PlugIn] NodeJS Debug ???
 
 Ainda não conseguimos fazer funcionar o debug do nodejs no sublime, mas estamos etudando como fazer isso de uma forma correta e assim que conseguirmos já colocamos aqui.
 
