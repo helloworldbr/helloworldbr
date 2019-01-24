@@ -106,6 +106,14 @@ Com ele você terá uma lista de comando do git para fazer o checkout, commit, p
 
 Esse plugin, ajuda você, mostrando atravéz de indicadores no lado da barrinha que mostra o número da linha a situação da linha, se ele foi alterada, incluída, escluida e se já foi commitada.
 
+## 13 - [PlugIn] PHP Debug ???
+
+Ainda não conseguimos fazer funcionar o XDebug no sublime, mas estamos etudando como fazer isso de uma forma correta e assim que conseguirmos já colocamos aqui.
+
+## 14 - [PlugIn] NodeJS Debug ???
+
+Ainda não conseguimos fazer funcionar o debug do nodejs no sublime, mas estamos etudando como fazer isso de uma forma correta e assim que conseguirmos já colocamos aqui.
+
 ---
 
 # Pronto!
