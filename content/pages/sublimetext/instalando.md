@@ -29,9 +29,9 @@ Quando tiver instalado certinho, abra o SublimeText e vamos inistalar os plugins
 
 O Package Control é aquele cara que vai ficar responsável por te dar acesso aos diversos plugins e temas do repositório do ST e vai gerenciar a instalação e remoção desses pacotes, para isso devemos seguir alguns passos:
 
-### 2.1 - Para instalar, acesse o site do [Package Control](https://packagecontrol.io/installation) e copie o código de linha de comando referênte a sua versão do sublime.
-### 2.2 - Cole o código de instalação no Console do ST (View>View Console) e dê um enter.
-### 2.3 - Pronto! O Package Control está instalado com sucesso!
+ - 2.1 - Para instalar, acesse o site do [Package Control](https://packagecontrol.io/installation) e copie o código de linha de comando referênte a sua versão do sublime.
+ - 2.2 - Cole o código de instalação no Console do ST (View>View Console) e dê um enter.
+ - 2.3 - Pronto! O Package Control está instalado com sucesso!
 
 ## 3 - [PlugIn] Emmet
 
